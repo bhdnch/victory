@@ -16,7 +16,7 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
-        background: #ccc url() no-repeat center center;
+        background: $secondary url() no-repeat center center;
         background-size: cover;
         &::before {
             position: absolute;
@@ -26,7 +26,7 @@
             width: 100%;
             height: 100%;
             content: "";
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.65);
         }
         video {
             position: absolute;
@@ -102,6 +102,7 @@
                 }
             }
             svg.intro__logo {
+                z-index: 50;
                 transform: translateX(-7px);
                 width: 70px;
                 transition: width 0.3s cubic-bezier(0.5, 0.05, 0.3, 0.55);
