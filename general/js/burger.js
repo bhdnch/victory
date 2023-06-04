@@ -1,6 +1,8 @@
-document.querySelector(".burger-menu").onclick = func;
+const burgerWrapper = document.querySelector(".intro__burger__wrapper");
+const burger = document.querySelector(".intro__burger");
+const burgerMenu = document.querySelector(".intro__burger-menu");
 
-function func() {
-    this.classList.toggle("menu-on");
-    document.querySelector(".intro__burger__menu").classList.toggle("intro__burger__menu-open");
-}
+burgerWrapper.onclick = () => {
+    burger.classList.toggle("menu-on");
+    burgerMenu.classList.toggle("intro__burger-menu_open");
+};
